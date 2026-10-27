@@ -86,43 +86,49 @@
         flex-shrink: 0;
       }
 
+      .logo-link,
       .brand-logo {
         display: flex;
         align-items: center;
         gap: 12px;
         text-decoration: none;
-        color: var(--forest-green);
+        color: var(--ink-headline);
+        cursor: pointer;
+        flex-shrink: 0;
       }
 
-      .brand-flower-icon {
-        color: var(--forest-green);
-        transition: transform 0.3s ease;
+      .logo-icon-svg {
+        width: 32px;
+        height: 32px;
+        filter: drop-shadow(0 2px 4px rgba(8, 72, 45, 0.15));
+        transition: transform 0.25s ease;
       }
 
-      .brand-logo:hover .brand-flower-icon {
-        transform: rotate(20deg) scale(1.05);
+      .logo-link:hover .logo-icon-svg,
+      .brand-logo:hover .logo-icon-svg {
+        transform: rotate(10deg) scale(1.05);
       }
 
-      .brand-text-wrap {
+      .logo-text-group {
         display: flex;
         flex-direction: column;
+      }
+
+      .logo-text {
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 19.5px;
+        letter-spacing: -0.025em;
+        color: var(--forest-green);
         line-height: 1.1;
       }
 
-      .brand-title {
-        font-family: 'Inter Tight', sans-serif;
-        font-weight: 800;
-        font-size: 20px;
-        letter-spacing: -0.02em;
-        color: var(--forest-green);
-      }
-
-      .brand-subtitle {
-        font-size: 10.5px;
-        font-weight: 600;
-        letter-spacing: 0.12em;
+      .logo-tagline {
+        font-size: 9.5px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
-        color: var(--ink-subline);
+        color: #6a7a6c;
       }
 
       .nav-links {
@@ -728,17 +734,22 @@
     <!-- Global Header Navigation -->
     <header class="site-header" id="siteHeader">
       <div class="header-left">
-        <a href="index.html" class="brand-logo" aria-label="LittleBloom Home">
-          <svg class="brand-flower-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 2a3 3 0 0 0-3 3c0 1.66 3 5 3 5s3-3.34 3-5a3 3 0 0 0-3-3z"></path>
-            <path d="M12 22a3 3 0 0 0 3-3c0-1.66-3-5-3-5s-3 3.34-3 5a3 3 0 0 0 3 3z"></path>
-            <path d="M2 12a3 3 0 0 0 3 3c1.66 0 5-3 5-3s-3.34-3-5-3a3 3 0 0 0-3 3z"></path>
-            <path d="M22 12a3 3 0 0 0-3-3c-1.66 0-5 3-5 3s3.34 3 5 3a3 3 0 0 0 3-3z"></path>
-            <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+        <a href="index.html" class="logo-link brand-logo" aria-label="LittleBloom Babywear Home">
+          <svg class="logo-icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M6 26C6 26 8 16 18 10C24 6.4 27 5 27 5C27 5 25.6 8 22 14C16 24 6 26 6 26Z"
+              fill="#08482D"
+            />
+            <path
+              d="M10 22C14 18 18 14 24 9"
+              stroke="#DAE7C7"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
           </svg>
-          <div class="brand-text-wrap">
-            <span class="brand-title">LittleBloom</span>
-            <span class="brand-subtitle">Babywear Atelier</span>
+          <div class="logo-text-group">
+            <span class="logo-text">LittleBloom</span>
+            <span class="logo-tagline">Pure Cotton Babywear</span>
           </div>
         </a>
       </div>
@@ -1047,15 +1058,23 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div>
-          <div class="brand-logo" style="margin-bottom: 12px;">
-            <svg class="brand-flower-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2a3 3 0 0 0-3 3c0 1.66 3 5 3 5s3-3.34 3-5a3 3 0 0 0-3-3z"></path>
-              <path d="M12 22a3 3 0 0 0 3-3c0-1.66-3-5-3-5s-3 3.34-3 5a3 3 0 0 0 3 3z"></path>
-              <path d="M2 12a3 3 0 0 0 3 3c1.66 0 5-3 5-3s-3.34-3-5-3a3 3 0 0 0-3 3z"></path>
-              <path d="M22 12a3 3 0 0 0-3-3c-1.66 0-5 3-5 3s3.34 3 5 3a3 3 0 0 0 3-3z"></path>
-              <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+          <div class="logo-link brand-logo" style="margin-bottom: 12px;">
+            <svg class="logo-icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6 26C6 26 8 16 18 10C24 6.4 27 5 27 5C27 5 25.6 8 22 14C16 24 6 26 6 26Z"
+                fill="#08482D"
+              />
+              <path
+                d="M10 22C14 18 18 14 24 9"
+                stroke="#DAE7C7"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
-            <span class="brand-title">LittleBloom Atelier</span>
+            <div class="logo-text-group">
+              <span class="logo-text">LittleBloom</span>
+              <span class="logo-tagline">Pure Cotton Babywear</span>
+            </div>
           </div>
           <p style="font-size: 13.5px; color: var(--ink-subline); line-height: 1.6; max-width: 320px;">
             India’s dedicated organic muslin babywear boutique. Handcrafted with zero toxic dyes, tagless collars, and gentle diaper snaps.
