@@ -132,13 +132,15 @@
       }
     },
 
-    // 8. Get customer reviews
-    async getReviews() {
+    // 8. Get customer reviews with optional filtering
+    async getReviews(params = {}) {
       try {
-        const res = await fetch(`${API_BASE}/reviews`);
+        const query = new URLSearchParams(params).toString();
+        const url = query ? `${API_BASE}/reviews?${query}` : `${API_BASE}/reviews`;
+        const res = await fetch(url);
         if (res.ok) {
           const json = await res.json();
-          if (json.success && Array.isArray(json.data)) return json.data;
+          if (json.success) return json;
         }
       } catch (err) {
         console.warn('[LittleBloomAPI] getReviews error:', err.message);
@@ -146,7 +148,36 @@
       return null;
     },
 
-    // 9. Get atelier stats
+    // 9. Submit a verified parent review
+    async submitReview(reviewData) {
+      try {
+        const res = await fetch(`${API_BASE}/reviews`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(reviewData)
+        });
+        return await res.json();
+      } catch (err) {
+        console.warn('[LittleBloomAPI] submitReview error:', err.message);
+        return { success: false, message: 'Could not contact review server.' };
+      }
+    },
+
+    // 10. Get all active promotional discount coupons & offers
+    async getOffers() {
+      try {
+        const res = await fetch(`${API_BASE}/offers`);
+        if (res.ok) {
+          const json = await res.json();
+          if (json.success && Array.isArray(json.data)) return json.data;
+        }
+      } catch (err) {
+        console.warn('[LittleBloomAPI] getOffers error:', err.message);
+      }
+      return null;
+    },
+
+    // 11. Get atelier stats
     async getStats() {
       try {
         const res = await fetch(`${API_BASE}/stats`);

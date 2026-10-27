@@ -13,6 +13,8 @@ const PORT = process.env.PORT || 5000;
 const DATA_DIR = path.join(__dirname, 'data');
 const PRODUCTS_FILE = path.join(DATA_DIR, 'products.json');
 const ORDERS_FILE = path.join(DATA_DIR, 'orders.json');
+const REVIEWS_FILE = path.join(DATA_DIR, 'reviews.json');
+const OFFERS_FILE = path.join(DATA_DIR, 'offers.json');
 
 // Middleware
 app.use(express.json({ limit: '10mb' }));
@@ -306,6 +308,7 @@ app.post('/api/coupons/validate', (req, res) => {
         code: 'BABY20',
         discountPercent: 20,
         discountAmount: discount,
+        freeShipping: false,
         message: '🎉 20% Baby Festival Discount Applied!'
       });
     }
@@ -318,6 +321,7 @@ app.post('/api/coupons/validate', (req, res) => {
         code: 'FIRST10',
         discountPercent: 10,
         discountAmount: discount,
+        freeShipping: false,
         message: '🎉 10% First Order Welcome Discount Applied!'
       });
     }
@@ -328,55 +332,154 @@ app.post('/api/coupons/validate', (req, res) => {
         valid: true,
         code: 'FREESHIP',
         freeShipping: true,
-        discountAmount: 0,
+        discountPercent: 0,
+        discountAmount: 49,
         message: '🚚 Free Express Shipping Coupon Applied!'
+      });
+    }
+
+    if (cleanCode === 'FESTIVE25') {
+      const discount = Math.round(cartTotal * 0.25);
+      return res.json({
+        success: true,
+        valid: true,
+        code: 'FESTIVE25',
+        discountPercent: 25,
+        discountAmount: discount,
+        freeShipping: false,
+        message: '🎀 25% Festive Tutu & Partywear Gala Discount Applied!'
+      });
+    }
+
+    if (cleanCode === 'TWINLOVE') {
+      return res.json({
+        success: true,
+        valid: true,
+        code: 'TWINLOVE',
+        discountPercent: null,
+        discountAmount: 300,
+        freeShipping: false,
+        message: '✨ Flat ₹300 Twin & Sibling Special Discount Applied!'
       });
     }
 
     return res.status(404).json({
       success: false,
       valid: false,
-      message: 'Invalid promo code. Try using BABY20 for 20% off.'
+      message: 'Invalid promo code. Check active codes on the Offers page (e.g. BABY20, FIRST10, FREESHIP).'
     });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }
 });
 
-// 8. Reviews API: Verified Buyer Testimonials
+// 8. Offers API: Get all active promotional discount coupons
+app.get('/api/offers', (req, res) => {
+  try {
+    const offers = loadJSON(OFFERS_FILE, []);
+    res.json({
+      success: true,
+      count: offers.length,
+      data: offers
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// 9. Reviews API: Get verified reviews with optional category & rating filters
 app.get('/api/reviews', (req, res) => {
-  res.json({
-    success: true,
-    data: [
-      {
-        id: 1,
-        author: "Sneha M.",
-        role: "Mom of Ananya (8M) · Bengaluru",
-        rating: 5,
-        badge: "Verified LittleBloom Order",
-        dress: "Sage Linen Ruffle Frock",
-        text: "The Sage Linen Ruffle Frock is unimaginably soft! Most baby party dresses have rough tulle, but this one is pure organic muslin on the inside. My 8-month daughter looked adorable on her naming ceremony."
-      },
-      {
-        id: 2,
-        author: "Rohan & Deepa",
-        role: "Gifted for 1st Birthday · Mumbai",
-        rating: 5,
-        badge: "Verified Atelier Buyer",
-        dress: "Lilac Fairy Tulle Ballerina",
-        text: "Ordered the Lilac Fairy Tulle Ballerina for my niece's 1st birthday. Arrived in 2 days with safe packaging. The snap buttons make diaper changes super easy without taking off the whole dress!"
-      },
-      {
-        id: 3,
-        author: "Kavita Rajan",
-        role: "Mom of Twins (18M) · Chennai",
-        rating: 5,
-        badge: "Repeat Customer",
-        dress: "Buttercup Daisy Sundress & Peplum",
-        text: "We have 4 frocks from LittleBloom now. After 15 machine washes, the colors haven't faded at all. The 3D view on this website showed the exact flare before buying. Highly recommended!"
-      }
-    ]
-  });
+  try {
+    const reviews = loadJSON(REVIEWS_FILE, []);
+    const { category, rating, sort } = req.query;
+
+    let filtered = [...reviews];
+
+    if (category && category !== 'all') {
+      const catLower = category.toLowerCase();
+      filtered = filtered.filter(r => (r.category || '').toLowerCase() === catLower);
+    }
+
+    if (rating && !isNaN(Number(rating))) {
+      const targetRating = Number(rating);
+      filtered = filtered.filter(r => Math.round(r.rating || 0) === targetRating);
+    }
+
+    if (sort === 'highest') {
+      filtered.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+    } else if (sort === 'likes') {
+      filtered.sort((a, b) => (b.likes || 0) - (a.likes || 0));
+    }
+
+    // Compute review statistics
+    const totalCount = reviews.length;
+    const avgRating = totalCount > 0 
+      ? (reviews.reduce((acc, r) => acc + (r.rating || 5), 0) / totalCount).toFixed(1)
+      : 4.9;
+
+    const breakdown = {
+      5: reviews.filter(r => (r.rating || 0) >= 5).length,
+      4: reviews.filter(r => (r.rating || 0) >= 4 && (r.rating || 0) < 5).length,
+      3: reviews.filter(r => (r.rating || 0) >= 3 && (r.rating || 0) < 4).length,
+      2: reviews.filter(r => (r.rating || 0) >= 2 && (r.rating || 0) < 3).length,
+      1: reviews.filter(r => (r.rating || 0) < 2).length
+    };
+
+    res.json({
+      success: true,
+      count: filtered.length,
+      totalCount: totalCount,
+      averageRating: Number(avgRating),
+      breakdown: breakdown,
+      data: filtered
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
+});
+
+// 10. Reviews API: Submit a new verified parent review
+app.post('/api/reviews', (req, res) => {
+  try {
+    const { author, role, rating, dress, category, text, photo } = req.body || {};
+
+    if (!author || !author.trim()) {
+      return res.status(400).json({ success: false, message: 'Please enter your name.' });
+    }
+    if (!text || text.trim().length < 10) {
+      return res.status(400).json({ success: false, message: 'Review text must be at least 10 characters long.' });
+    }
+
+    const reviews = loadJSON(REVIEWS_FILE, []);
+    const newId = reviews.length > 0 ? Math.max(...reviews.map(r => r.id || 0)) + 1 : 1;
+
+    const newReview = {
+      id: newId,
+      author: author.trim(),
+      role: role && role.trim() ? role.trim() : 'Verified Parent',
+      rating: Math.min(5, Math.max(1, Number(rating) || 5)),
+      badge: 'Verified Atelier Buyer',
+      dress: dress && dress.trim() ? dress.trim() : 'LittleBloom Baby Frock',
+      category: category && category.trim() ? category.trim() : 'party',
+      photo: photo || '/baby_dresses/dress_sage_linen.jpg',
+      date: 'Just now',
+      likes: 1,
+      text: text.trim()
+    };
+
+    reviews.unshift(newReview);
+    saveJSON(REVIEWS_FILE, reviews);
+
+    console.log(`[Review Submitted] By ${newReview.author} for "${newReview.dress}" (Rating: ${newReview.rating}★)`);
+
+    res.status(201).json({
+      success: true,
+      message: 'Thank you! Your verified review has been published.',
+      data: newReview
+    });
+  } catch (err) {
+    res.status(500).json({ success: false, error: err.message });
+  }
 });
 
 // 9. Stats API

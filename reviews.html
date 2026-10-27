@@ -1,0 +1,1513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Reviews & Ratings - LittleBloom Babywear Atelier</title>
+    <meta
+      name="description"
+      content="Read real parent reviews and verified ratings for LittleBloom 100% organic cotton baby dresses, newborn frocks, and festive costumes."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg-page: #f5f8ef;
+        --forest-green: #08482d;
+        --forest-green-dark: #053320;
+        --forest-green-light: #0d5f3c;
+        --mint-badge: #dae7c7;
+        --mint-badge-hover: #cde0b6;
+        --ink-headline: #101410;
+        --ink-subline: #5e5e61;
+        --border-subtle: rgba(8, 72, 45, 0.12);
+        --card-bg: #ffffff;
+        --atelier-gold: #c59b27;
+        --atelier-navy: #15273a;
+        --discount-red: #c53030;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        background-color: var(--bg-page);
+      }
+
+      body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: var(--bg-page);
+        color: var(--ink-headline);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow-x: hidden;
+      }
+
+      /* Site Header */
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 72px;
+        background: rgba(250, 252, 246, 0.95);
+        backdrop-filter: blur(20px) saturate(180%);
+        -webkit-backdrop-filter: blur(20px) saturate(180%);
+        border-bottom: 1px solid rgba(8, 72, 45, 0.08);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        gap: 24px;
+        transition: box-shadow 0.25s ease;
+      }
+
+      .site-header.is-scrolled {
+        box-shadow: 0 4px 24px rgba(8, 72, 45, 0.08);
+        background: rgba(246, 249, 241, 0.98);
+      }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-shrink: 0;
+      }
+
+      .brand-logo {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+        color: var(--forest-green);
+      }
+
+      .brand-flower-icon {
+        color: var(--forest-green);
+        transition: transform 0.3s ease;
+      }
+
+      .brand-logo:hover .brand-flower-icon {
+        transform: rotate(20deg) scale(1.05);
+      }
+
+      .brand-text-wrap {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+      }
+
+      .brand-title {
+        font-family: 'Inter Tight', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+        letter-spacing: -0.02em;
+        color: var(--forest-green);
+      }
+
+      .brand-subtitle {
+        font-size: 10.5px;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-subline);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .nav-item {
+        position: relative;
+        padding: 8px 16px;
+        font-size: 14.5px;
+        font-weight: 600;
+        color: var(--ink-subline);
+        text-decoration: none;
+        border-radius: 999px;
+        transition: all 0.2s ease;
+      }
+
+      .nav-item:hover {
+        color: var(--forest-green);
+        background: rgba(8, 72, 45, 0.05);
+      }
+
+      .nav-item.is-active {
+        color: var(--forest-green);
+        background: var(--mint-badge);
+        font-weight: 700;
+      }
+
+      .nav-pill-sale {
+        display: inline-block;
+        font-size: 11px;
+        font-weight: 800;
+        background: #e53e3e;
+        color: #ffffff;
+        padding: 1px 6px;
+        border-radius: 999px;
+        margin-left: 4px;
+        vertical-align: middle;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+
+      .header-trust-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(8, 72, 45, 0.06);
+        border: 1px solid rgba(8, 72, 45, 0.14);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--forest-green);
+      }
+
+      .btn-wishlist,
+      .btn-cart-trigger {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #ffffff;
+        border: 1px solid var(--border-subtle);
+        padding: 8px 16px;
+        border-radius: 999px;
+        font-size: 13.5px;
+        font-weight: 600;
+        color: var(--ink-headline);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .btn-wishlist:hover,
+      .btn-cart-trigger:hover {
+        border-color: var(--forest-green);
+        color: var(--forest-green);
+        background: rgba(8, 72, 45, 0.04);
+        transform: translateY(-1px);
+      }
+
+      .cart-badge-count,
+      .wishlist-count-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 20px;
+        height: 20px;
+        padding: 0 6px;
+        border-radius: 999px;
+        background: var(--forest-green);
+        color: #ffffff;
+        font-size: 11px;
+        font-weight: 700;
+      }
+
+      .mobile-menu-btn {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--forest-green);
+        cursor: pointer;
+        padding: 6px;
+      }
+
+      /* Page Banner Header */
+      .page-hero {
+        margin-top: 72px;
+        padding: 56px 40px 32px;
+        background: linear-gradient(180deg, rgba(218, 231, 199, 0.35) 0%, rgba(245, 248, 239, 0) 100%);
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .hero-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .breadcrumb-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--ink-subline);
+        margin-bottom: 16px;
+      }
+
+      .breadcrumb-row a {
+        color: var(--forest-green);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .pill-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: var(--mint-badge);
+        color: var(--forest-green);
+        font-size: 12px;
+        font-weight: 700;
+        padding: 5px 14px;
+        border-radius: 999px;
+        margin-bottom: 14px;
+      }
+
+      .page-title {
+        font-family: 'Inter Tight', sans-serif;
+        font-size: clamp(32px, 4.5vw, 46px);
+        font-weight: 800;
+        color: var(--forest-green);
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+      }
+
+      .page-desc {
+        font-size: clamp(15px, 1.8vw, 17px);
+        color: var(--ink-subline);
+        max-width: 720px;
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      /* Ratings Overview Card */
+      .rating-overview-card {
+        background: #ffffff;
+        border-radius: 24px;
+        border: 1px solid var(--border-subtle);
+        box-shadow: 0 12px 36px rgba(8, 72, 45, 0.06);
+        padding: 32px 36px;
+        display: grid;
+        grid-template-columns: 280px 1fr 260px;
+        gap: 36px;
+        align-items: center;
+        margin-top: 24px;
+      }
+
+      .score-box {
+        text-align: center;
+        border-right: 1px solid rgba(8, 72, 45, 0.08);
+        padding-right: 28px;
+      }
+
+      .score-num {
+        font-family: 'Inter Tight', sans-serif;
+        font-size: 58px;
+        font-weight: 800;
+        color: var(--forest-green);
+        line-height: 1;
+      }
+
+      .stars-row {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        color: var(--atelier-gold);
+        margin: 10px 0 6px;
+      }
+
+      .score-sub {
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-subline);
+      }
+
+      .bars-box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .bar-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-subline);
+      }
+
+      .bar-label {
+        width: 50px;
+        text-align: right;
+      }
+
+      .bar-track {
+        flex: 1;
+        height: 8px;
+        background: rgba(8, 72, 45, 0.08);
+        border-radius: 999px;
+        overflow: hidden;
+      }
+
+      .bar-fill {
+        height: 100%;
+        background: var(--atelier-gold);
+        border-radius: 999px;
+        transition: width 0.6s ease;
+      }
+
+      .bar-count {
+        width: 32px;
+        font-size: 12px;
+        color: #777;
+      }
+
+      .action-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-left: 1px solid rgba(8, 72, 45, 0.08);
+        padding-left: 28px;
+      }
+
+      .btn-write-review {
+        background: var(--forest-green);
+        color: #ffffff;
+        border: none;
+        border-radius: 999px;
+        padding: 14px 26px;
+        font-size: 14.5px;
+        font-weight: 700;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        box-shadow: 0 8px 22px rgba(8, 72, 45, 0.25);
+        transition: all 0.2s ease;
+      }
+
+      .btn-write-review:hover {
+        background: var(--forest-green-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 12px 28px rgba(8, 72, 45, 0.35);
+      }
+
+      /* Filter & Controls Bar */
+      .controls-bar {
+        max-width: 1200px;
+        margin: 32px auto 24px;
+        padding: 0 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .category-pills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .cat-filter-btn {
+        background: #ffffff;
+        border: 1px solid var(--border-subtle);
+        padding: 7px 16px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-subline);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .cat-filter-btn:hover {
+        border-color: var(--forest-green);
+        color: var(--forest-green);
+      }
+
+      .cat-filter-btn.is-active {
+        background: var(--forest-green);
+        color: #ffffff;
+        border-color: var(--forest-green);
+      }
+
+      .sort-select {
+        background: #ffffff;
+        border: 1px solid var(--border-subtle);
+        padding: 8px 16px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+        color: var(--ink-headline);
+        cursor: pointer;
+        outline: none;
+      }
+
+      /* Reviews Grid */
+      .reviews-section {
+        max-width: 1200px;
+        margin: 0 auto 60px;
+        padding: 0 40px;
+      }
+
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 24px;
+      }
+
+      .review-card {
+        background: #ffffff;
+        border-radius: 20px;
+        border: 1px solid var(--border-subtle);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 6px 20px rgba(8, 72, 45, 0.04);
+        transition: all 0.25s ease;
+      }
+
+      .review-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 14px 32px rgba(8, 72, 45, 0.1);
+        border-color: rgba(8, 72, 45, 0.24);
+      }
+
+      .review-top-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+
+      .verified-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 11px;
+        font-weight: 700;
+        color: #08482d;
+        background: rgba(18, 183, 106, 0.14);
+        padding: 3px 8px;
+        border-radius: 999px;
+      }
+
+      .review-dress-pill {
+        display: inline-block;
+        font-size: 11.5px;
+        font-weight: 700;
+        color: var(--forest-green);
+        background: rgba(8, 72, 45, 0.06);
+        padding: 3px 10px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+      }
+
+      .review-text {
+        font-size: 14.5px;
+        line-height: 1.6;
+        color: #2b302c;
+        margin-bottom: 18px;
+        font-style: normal;
+      }
+
+      .review-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 14px;
+        border-top: 1px solid rgba(8, 72, 45, 0.06);
+      }
+
+      .reviewer-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .reviewer-thumb {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--mint-badge);
+        background: #eef3e6;
+      }
+
+      .reviewer-name {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--ink-headline);
+      }
+
+      .reviewer-meta {
+        font-size: 12px;
+        color: var(--ink-subline);
+      }
+
+      .btn-like {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: none;
+        border: 1px solid rgba(8, 72, 45, 0.12);
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--ink-subline);
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .btn-like:hover {
+        background: rgba(8, 72, 45, 0.05);
+        color: var(--forest-green);
+        border-color: var(--forest-green);
+      }
+
+      /* Write Review Modal */
+      .modal-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(16, 20, 16, 0.6);
+        backdrop-filter: blur(6px);
+        z-index: 200;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .modal-backdrop.is-open {
+        display: flex;
+      }
+
+      .review-modal-card {
+        background: #ffffff;
+        border-radius: 24px;
+        width: 100%;
+        max-width: 540px;
+        max-height: 90vh;
+        overflow-y: auto;
+        padding: 32px;
+        position: relative;
+        box-shadow: 0 20px 48px rgba(0, 0, 0, 0.2);
+        animation: modalPop 0.25s ease-out;
+      }
+
+      @keyframes modalPop {
+        from {
+          opacity: 0;
+          transform: scale(0.95) translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1) translateY(0);
+        }
+      }
+
+      .btn-close-modal {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: rgba(8, 72, 45, 0.06);
+        border: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--ink-subline);
+        cursor: pointer;
+      }
+
+      .form-group {
+        margin-bottom: 18px;
+      }
+
+      .form-label {
+        display: block;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink-headline);
+        margin-bottom: 6px;
+      }
+
+      .form-input,
+      .form-select,
+      .form-textarea {
+        width: 100%;
+        padding: 10px 14px;
+        border: 1px solid var(--border-subtle);
+        border-radius: 12px;
+        font-size: 14px;
+        color: var(--ink-headline);
+        outline: none;
+        transition: border-color 0.2s ease;
+      }
+
+      .form-input:focus,
+      .form-select:focus,
+      .form-textarea:focus {
+        border-color: var(--forest-green);
+        box-shadow: 0 0 0 3px rgba(8, 72, 45, 0.1);
+      }
+
+      .star-picker {
+        display: flex;
+        gap: 6px;
+        cursor: pointer;
+      }
+
+      .star-picker svg {
+        width: 28px;
+        height: 28px;
+        fill: #d8ded2;
+        transition: fill 0.15s ease;
+      }
+
+      .star-picker svg.is-active {
+        fill: var(--atelier-gold);
+      }
+
+      /* Cart Drawer */
+      .cart-drawer-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(16, 20, 16, 0.5);
+        backdrop-filter: blur(4px);
+        z-index: 150;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .cart-drawer-overlay.is-open {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .cart-drawer-panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        max-width: 440px;
+        height: 100%;
+        background: #ffffff;
+        z-index: 160;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: -8px 0 32px rgba(8, 72, 45, 0.15);
+      }
+
+      .cart-drawer-panel.is-open {
+        transform: translateX(0);
+      }
+
+      .cart-header {
+        padding: 20px 24px;
+        border-bottom: 1px solid var(--border-subtle);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .cart-header-title {
+        font-size: 17px;
+        font-weight: 800;
+        color: var(--forest-green);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .btn-close-drawer {
+        background: none;
+        border: none;
+        color: #777;
+        cursor: pointer;
+      }
+
+      .cart-items-body {
+        flex: 1;
+        overflow-y: auto;
+        padding: 20px 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .cart-footer {
+        padding: 20px 24px;
+        border-top: 1px solid var(--border-subtle);
+        background: #fafcf6;
+      }
+
+      .btn-checkout {
+        width: 100%;
+        background: var(--forest-green);
+        color: #ffffff;
+        border: none;
+        border-radius: 999px;
+        padding: 14px;
+        font-size: 15px;
+        font-weight: 700;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      /* Toast */
+      .toast-notification {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background: var(--forest-green);
+        color: #ffffff;
+        padding: 12px 20px;
+        border-radius: 999px;
+        font-size: 13.5px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 8px 24px rgba(8, 72, 45, 0.3);
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(12px);
+        transition: all 0.25s ease;
+        z-index: 300;
+      }
+
+      .toast-notification.is-visible {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+      }
+
+      /* Footer */
+      .site-footer {
+        background: #ffffff;
+        border-top: 1px solid var(--border-subtle);
+        padding: 48px 40px 24px;
+        margin-top: 60px;
+      }
+
+      .footer-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 36px;
+      }
+
+      .footer-col-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--forest-green);
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .footer-links-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .footer-links-list a {
+        color: var(--ink-subline);
+        text-decoration: none;
+        font-size: 13.5px;
+        transition: color 0.2s ease;
+      }
+
+      .footer-links-list a:hover {
+        color: var(--forest-green);
+      }
+
+      .footer-bottom-bar {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-top: 20px;
+        border-top: 1px solid rgba(8, 72, 45, 0.06);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        color: var(--ink-subline);
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      @media (max-width: 900px) {
+        .rating-overview-card {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+        .score-box {
+          border-right: none;
+          border-bottom: 1px solid rgba(8, 72, 45, 0.08);
+          padding-right: 0;
+          padding-bottom: 20px;
+        }
+        .action-box {
+          border-left: none;
+          border-top: 1px solid rgba(8, 72, 45, 0.08);
+          padding-left: 0;
+          padding-top: 20px;
+        }
+        .footer-inner {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .site-header {
+          padding: 0 20px;
+        }
+        .nav-links {
+          display: none;
+        }
+        .mobile-menu-btn {
+          display: block;
+        }
+        .page-hero {
+          padding: 40px 20px 24px;
+        }
+        .controls-bar {
+          padding: 0 20px;
+        }
+        .reviews-section {
+          padding: 0 20px;
+        }
+        .footer-inner {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header" id="siteHeader">
+      <div class="header-left">
+        <a href="index.html" class="brand-logo" aria-label="LittleBloom Home">
+          <svg class="brand-flower-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2a3 3 0 0 0-3 3c0 1.66 3 5 3 5s3-3.34 3-5a3 3 0 0 0-3-3z"></path>
+            <path d="M12 22a3 3 0 0 0 3-3c0-1.66-3-5-3-5s-3 3.34-3 5a3 3 0 0 0 3 3z"></path>
+            <path d="M2 12a3 3 0 0 0 3 3c1.66 0 5-3 5-3s-3.34-3-5-3a3 3 0 0 0-3 3z"></path>
+            <path d="M22 12a3 3 0 0 0-3-3c-1.66 0-5 3-5 3s3.34 3 5 3a3 3 0 0 0 3-3z"></path>
+            <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+          </svg>
+          <div class="brand-text-wrap">
+            <span class="brand-title">LittleBloom</span>
+            <span class="brand-subtitle">Babywear Atelier</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links" id="mainNav">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="collection.html" class="nav-item">Collection</a>
+        <a href="offers.html" class="nav-item">Offers <span class="nav-pill-sale">20%</span></a>
+        <a href="reviews.html" class="nav-item is-active">Reviews</a>
+        <a href="orders.html" class="nav-item">Orders</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <div class="header-trust-badge">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Atelier Certified</span>
+        </div>
+
+        <button class="btn-cart-trigger" id="btnCartTrigger" aria-label="Open Shopping Cart">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span>Cart</span>
+          <span class="cart-badge-count" id="headerCartCount">0</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle navigation">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Page Hero Banner -->
+    <section class="page-hero">
+      <div class="hero-inner">
+        <div class="breadcrumb-row">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Parent Reviews & Ratings</span>
+        </div>
+        <div class="pill-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span>4.9 / 5 Overall Verified Rating · 1,845+ Happy Families</span>
+        </div>
+        <h1 class="page-title">Parent Stories & Verified Reviews</h1>
+        <p class="page-desc">
+          Honest feedback and photos from mothers, fathers, and gift-givers who dressed their babies in LittleBloom 100% organic muslin frocks.
+        </p>
+
+        <!-- Rating Overview Card -->
+        <div class="rating-overview-card">
+          <div class="score-box">
+            <div class="score-num" id="overviewAvgRating">4.9</div>
+            <div class="stars-row">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <div class="score-sub" id="overviewTotalCount">Based on 1,845 ratings</div>
+          </div>
+
+          <div class="bars-box" id="ratingBarsBox">
+            <div class="bar-row">
+              <span class="bar-label">5 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 88%;"></div></div>
+              <span class="bar-count">88%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">4 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 10%;"></div></div>
+              <span class="bar-count">10%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">3 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 2%;"></div></div>
+              <span class="bar-count">2%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">2 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 0%;"></div></div>
+              <span class="bar-count">0%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">1 ★</span>
+              <div class="bar-track"><div class="bar-fill" style="width: 0%;"></div></div>
+              <span class="bar-count">0%</span>
+            </div>
+          </div>
+
+          <div class="action-box">
+            <div style="font-size: 13px; color: var(--ink-subline); margin-bottom: 12px; font-weight: 500;">
+              Have you ordered from LittleBloom? Share your experience!
+            </div>
+            <button class="btn-write-review" id="btnOpenReviewModal">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3">
+                <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+                <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+              </svg>
+              <span>Write a Review</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter and Sort Controls -->
+    <div class="controls-bar">
+      <div class="category-pills" id="categoryFilterGroup">
+        <button class="cat-filter-btn is-active" data-cat="all">All Outfits</button>
+        <button class="cat-filter-btn" data-cat="newborn">Newborn Muslin</button>
+        <button class="cat-filter-btn" data-cat="party">Party & Festive</button>
+        <button class="cat-filter-btn" data-cat="costume">Baby Costumes</button>
+        <button class="cat-filter-btn" data-cat="sundress">Sundress & Linen</button>
+      </div>
+
+      <div style="display: flex; gap: 12px; align-items: center;">
+        <select class="sort-select" id="ratingFilterSelect" aria-label="Filter by rating">
+          <option value="all">All Star Ratings</option>
+          <option value="5">5 Stars Only</option>
+          <option value="4">4 Stars Only</option>
+        </select>
+
+        <select class="sort-select" id="sortSelect" aria-label="Sort reviews">
+          <option value="newest">Newest First</option>
+          <option value="highest">Highest Rated</option>
+          <option value="likes">Most Helpful</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Reviews Grid Section -->
+    <section class="reviews-section">
+      <div class="reviews-grid" id="reviewsGridContainer">
+        <!-- Rendered via JS -->
+      </div>
+    </section>
+
+    <!-- Write a Review Modal -->
+    <div class="modal-backdrop" id="reviewModal">
+      <div class="review-modal-card">
+        <button class="btn-close-modal" id="btnCloseReviewModal" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <h3 style="font-size: 22px; font-weight: 800; color: var(--forest-green); margin-bottom: 6px;">
+          Write a Parent Review
+        </h3>
+        <p style="font-size: 13.5px; color: var(--ink-subline); margin-bottom: 20px;">
+          Your genuine feedback helps other parents choose safe, breathable clothing for their little ones.
+        </p>
+
+        <form id="newReviewForm">
+          <div class="form-group">
+            <label class="form-label" for="reviewAuthor">Your Name *</label>
+            <input type="text" id="reviewAuthor" class="form-input" placeholder="e.g. Radhika V." required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="reviewRole">Parent Role & City *</label>
+            <input type="text" id="reviewRole" class="form-input" placeholder="e.g. Mom of Kiara (10M) · Hyderabad" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="reviewDress">Outfit Purchased *</label>
+            <select id="reviewDress" class="form-select" required>
+              <option value="Sage Linen Ruffle Frock">Sage Linen Ruffle Frock</option>
+              <option value="Blush Floral Peplum Frock">Blush Floral Peplum Frock</option>
+              <option value="Buttercup Daisy Sundress">Buttercup Daisy Sundress</option>
+              <option value="Lilac Fairy Tulle Ballerina">Lilac Fairy Tulle Ballerina</option>
+              <option value="Sky Blue Gingham Smocked Frock">Sky Blue Gingham Smocked Frock</option>
+              <option value="Terracotta Boho Tassel Frock">Terracotta Boho Tassel Frock</option>
+              <option value="Little Lion Plush Romper">Little Lion Plush Romper</option>
+              <option value="Little Krishna Festive Kurta Set">Little Krishna Festive Kurta Set</option>
+              <option value="Strawberry Shortcake Pinafore">Strawberry Shortcake Pinafore</option>
+              <option value="Teddy Bear Hooded Onesie">Teddy Bear Hooded Onesie</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your Rating *</label>
+            <div class="star-picker" id="starPicker">
+              <svg data-val="1" viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg data-val="2" viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg data-val="3" viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg data-val="4" viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <svg data-val="5" viewBox="0 0 24 24" class="is-active"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <input type="hidden" id="selectedStarRating" value="5" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="reviewText">Review Comments *</label>
+            <textarea id="reviewText" class="form-textarea" rows="4" placeholder="How was the fabric softness, diaper snap comfort, and fit on your baby?" required minlength="10"></textarea>
+          </div>
+
+          <button type="submit" class="btn-checkout" id="btnSubmitReview" style="margin-top: 10px;">
+            <span>Submit Verified Review</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Shopping Cart Slide-Over Drawer -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer-panel" id="cartDrawer" aria-label="Shopping Cart">
+      <div class="cart-header">
+        <h3 class="cart-header-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span>Your Shopping Bag</span>
+        </h3>
+        <button class="btn-close-drawer" id="btnCloseCart" aria-label="Close cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="cart-items-body" id="cartItemsList">
+        <!-- Injected via JS -->
+      </div>
+      <div class="cart-footer">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 14px; font-weight: 700; font-size: 16px;">
+          <span>Subtotal</span>
+          <span id="cartDrawerSubtotal">₹0</span>
+        </div>
+        <a href="collection.html" class="btn-checkout" style="text-decoration: none;">
+          <span>View Dresses & Checkout</span>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotify">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span id="toastText">Review submitted successfully!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div>
+          <div class="brand-logo" style="margin-bottom: 12px;">
+            <svg class="brand-flower-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a3 3 0 0 0-3 3c0 1.66 3 5 3 5s3-3.34 3-5a3 3 0 0 0-3-3z"></path>
+              <path d="M12 22a3 3 0 0 0 3-3c0-1.66-3-5-3-5s-3 3.34-3 5a3 3 0 0 0 3 3z"></path>
+              <path d="M2 12a3 3 0 0 0 3 3c1.66 0 5-3 5-3s-3.34-3-5-3a3 3 0 0 0-3 3z"></path>
+              <path d="M22 12a3 3 0 0 0-3-3c-1.66 0-5 3-5 3s3.34 3 5 3a3 3 0 0 0 3-3z"></path>
+              <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+            </svg>
+            <span class="brand-title">LittleBloom Atelier</span>
+          </div>
+          <p style="font-size: 13.5px; color: var(--ink-subline); line-height: 1.6; max-width: 320px;">
+            India’s dedicated organic muslin babywear boutique. Handcrafted with zero toxic dyes, tagless collars, and gentle diaper snaps.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home Showcase</a></li>
+            <li><a href="collection.html">Full Collection</a></li>
+            <li><a href="offers.html">Offers & Promo Codes</a></li>
+            <li><a href="reviews.html">Parent Reviews</a></li>
+            <li><a href="orders.html">Track Orders</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Atelier Care</h4>
+          <ul class="footer-links-list">
+            <li><a href="orders.html">Live Order Tracking</a></li>
+            <li><a href="offers.html">Festival Coupons</a></li>
+            <li><a href="reviews.html">Verified Buyer Photos</a></li>
+            <li><a href="collection.html">Fabric Sizing Guide</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quality Seal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#guarantee">100% GOTS Organic Muslin</a></li>
+            <li><a href="index.html#guarantee">Nickel-Free Brass Snaps</a></li>
+            <li><a href="index.html#guarantee">Tagless Anti-Itch Neck</a></li>
+            <li><a href="index.html#guarantee">48-Hour Doorstep Delivery</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 2026 LittleBloom Babywear Ltd. All rights reserved.</span>
+        <span>Verified Reviews powered by LittleBloom Atelier Express Backend</span>
+      </div>
+    </footer>
+
+    <!-- Client Script -->
+    <script src="/src/apiClient.js"></script>
+    <script>
+      (function () {
+        'use strict';
+
+        let currentCategory = 'all';
+        let currentRating = 'all';
+        let currentSort = 'newest';
+        let allReviews = [];
+
+        const reviewsGrid = document.getElementById('reviewsGridContainer');
+        const overviewAvgRating = document.getElementById('overviewAvgRating');
+        const overviewTotalCount = document.getElementById('overviewTotalCount');
+        const categoryFilterGroup = document.getElementById('categoryFilterGroup');
+        const ratingFilterSelect = document.getElementById('ratingFilterSelect');
+        const sortSelect = document.getElementById('sortSelect');
+        const toast = document.getElementById('toastNotify');
+        const toastText = document.getElementById('toastText');
+
+        function showToast(msg) {
+          toastText.textContent = msg;
+          toast.classList.add('is-visible');
+          setTimeout(() => toast.classList.remove('is-visible'), 3200);
+        }
+
+        // Render reviews
+        function renderReviews(reviews) {
+          if (!reviews || reviews.length === 0) {
+            reviewsGrid.innerHTML = `
+              <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: #fff; border-radius: 20px; border: 1px solid var(--border-subtle);">
+                <div style="font-size: 36px; margin-bottom: 12px;">🌱</div>
+                <h3 style="font-size: 18px; color: var(--forest-green); font-weight: 700;">No reviews found for this selection</h3>
+                <p style="color: var(--ink-subline); font-size: 14px; margin-top: 6px;">Try changing the filter or write the first review!</p>
+              </div>
+            `;
+            return;
+          }
+
+          reviewsGrid.innerHTML = reviews.map(r => {
+            const stars = Array.from({ length: 5 }, (_, i) => {
+              const active = i < Math.round(r.rating || 5);
+              return `<svg width="15" height="15" fill="${active ? '#c59b27' : '#d8ded2'}" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>`;
+            }).join('');
+
+            return `
+              <article class="review-card" data-id="${r.id}">
+                <div>
+                  <div class="review-top-row">
+                    <div style="display: flex; gap: 2px;">${stars}</div>
+                    <span class="verified-badge">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      ${r.badge || 'Verified Order'}
+                    </span>
+                  </div>
+                  <div class="review-dress-pill">${r.dress || 'LittleBloom Baby Frock'}</div>
+                  <p class="review-text">"${r.text}"</p>
+                </div>
+
+                <div class="review-footer">
+                  <div class="reviewer-info">
+                    <img src="${r.photo || '/baby_dresses/dress_sage_linen.jpg'}" alt="${r.author}" class="reviewer-thumb" />
+                    <div>
+                      <div class="reviewer-name">${r.author}</div>
+                      <div class="reviewer-meta">${r.role || 'Verified Parent'} · ${r.date || 'Recent'}</div>
+                    </div>
+                  </div>
+                  <button class="btn-like" onclick="likeReview(${r.id})">
+                    <span>❤️</span>
+                    <span id="likesCount-${r.id}">${r.likes || 1}</span>
+                  </button>
+                </div>
+              </article>
+            `;
+          }).join('');
+        }
+
+        window.likeReview = function(id) {
+          const el = document.getElementById(`likesCount-${id}`);
+          if (el) {
+            let count = parseInt(el.textContent) || 0;
+            el.textContent = count + 1;
+            showToast('Marked review as helpful!');
+          }
+        };
+
+        // Fetch reviews from Backend API
+        async function fetchReviews() {
+          const params = {};
+          if (currentCategory !== 'all') params.category = currentCategory;
+          if (currentRating !== 'all') params.rating = currentRating;
+          if (currentSort) params.sort = currentSort;
+
+          if (window.LittleBloomAPI && window.LittleBloomAPI.getReviews) {
+            const res = await window.LittleBloomAPI.getReviews(params);
+            if (res && res.success && Array.isArray(res.data)) {
+              allReviews = res.data;
+              renderReviews(allReviews);
+              if (res.averageRating) overviewAvgRating.textContent = res.averageRating;
+              if (res.totalCount) overviewTotalCount.textContent = `Based on ${res.totalCount} verified ratings`;
+              return;
+            }
+          }
+
+          // Fallback if backend is slow
+          try {
+            const res = await fetch('/api/reviews');
+            const data = await res.json();
+            if (data.success && Array.isArray(data.data)) {
+              allReviews = data.data;
+              renderReviews(allReviews);
+            }
+          } catch (e) {
+            console.warn('Reviews fetch fallback error:', e);
+          }
+        }
+
+        // Category filter buttons
+        categoryFilterGroup.addEventListener('click', (e) => {
+          const btn = e.target.closest('.cat-filter-btn');
+          if (!btn) return;
+          categoryFilterGroup.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          currentCategory = btn.dataset.cat;
+          fetchReviews();
+        });
+
+        // Rating and Sort Selects
+        ratingFilterSelect.addEventListener('change', (e) => {
+          currentRating = e.target.value;
+          fetchReviews();
+        });
+
+        sortSelect.addEventListener('change', (e) => {
+          currentSort = e.target.value;
+          fetchReviews();
+        });
+
+        // Review Modal Logic
+        const reviewModal = document.getElementById('reviewModal');
+        const btnOpenReviewModal = document.getElementById('btnOpenReviewModal');
+        const btnCloseReviewModal = document.getElementById('btnCloseReviewModal');
+        const newReviewForm = document.getElementById('newReviewForm');
+        const starPicker = document.getElementById('starPicker');
+        const selectedStarRating = document.getElementById('selectedStarRating');
+
+        btnOpenReviewModal.addEventListener('click', () => {
+          reviewModal.classList.add('is-open');
+          document.body.style.overflow = 'hidden';
+        });
+
+        function closeReviewModal() {
+          reviewModal.classList.remove('is-open');
+          document.body.style.overflow = 'auto';
+        }
+
+        btnCloseReviewModal.addEventListener('click', closeReviewModal);
+
+        reviewModal.addEventListener('click', (e) => {
+          if (e.target === reviewModal) closeReviewModal();
+        });
+
+        // Star picker click
+        starPicker.addEventListener('click', (e) => {
+          const star = e.target.closest('svg');
+          if (!star) return;
+          const val = parseInt(star.dataset.val);
+          selectedStarRating.value = val;
+          starPicker.querySelectorAll('svg').forEach((s, idx) => {
+            if (idx < val) s.classList.add('is-active');
+            else s.classList.remove('is-active');
+          });
+        });
+
+        // Submit review form
+        newReviewForm.addEventListener('submit', async (e) => {
+          e.preventDefault();
+          const author = document.getElementById('reviewAuthor').value;
+          const role = document.getElementById('reviewRole').value;
+          const dress = document.getElementById('reviewDress').value;
+          const rating = parseInt(selectedStarRating.value) || 5;
+          const text = document.getElementById('reviewText').value;
+
+          const payload = {
+            author,
+            role,
+            dress,
+            rating,
+            text,
+            category: currentCategory !== 'all' ? currentCategory : 'party'
+          };
+
+          let success = false;
+          if (window.LittleBloomAPI && window.LittleBloomAPI.submitReview) {
+            const res = await window.LittleBloomAPI.submitReview(payload);
+            if (res && res.success) {
+              success = true;
+              showToast(res.message || 'Review published live to Atelier records!');
+            }
+          }
+
+          if (!success) {
+            // direct fetch fallback
+            try {
+              const res = await fetch('/api/reviews', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+              });
+              const data = await res.json();
+              if (data.success) {
+                success = true;
+                showToast('Review submitted successfully!');
+              }
+            } catch (err) {
+              console.error(err);
+            }
+          }
+
+          closeReviewModal();
+          newReviewForm.reset();
+          fetchReviews();
+        });
+
+        // Cart Drawer
+        const cartDrawer = document.getElementById('cartDrawer');
+        const cartOverlay = document.getElementById('cartOverlay');
+        const btnCartTrigger = document.getElementById('btnCartTrigger');
+        const btnCloseCart = document.getElementById('btnCloseCart');
+        const headerCartCount = document.getElementById('headerCartCount');
+
+        function loadCartCount() {
+          try {
+            const cart = JSON.parse(localStorage.getItem('littlebloom_cart') || '[]');
+            const count = cart.reduce((acc, item) => acc + (item.quantity || 1), 0);
+            headerCartCount.textContent = count;
+            const subtotal = cart.reduce((acc, item) => acc + ((item.priceINR || 699) * (item.quantity || 1)), 0);
+            document.getElementById('cartDrawerSubtotal').textContent = `₹${subtotal}`;
+          } catch (e) {}
+        }
+
+        btnCartTrigger.addEventListener('click', () => {
+          cartDrawer.classList.add('is-open');
+          cartOverlay.classList.add('is-open');
+        });
+
+        btnCloseCart.addEventListener('click', () => {
+          cartDrawer.classList.remove('is-open');
+          cartOverlay.classList.remove('is-open');
+        });
+
+        cartOverlay.addEventListener('click', () => {
+          cartDrawer.classList.remove('is-open');
+          cartOverlay.classList.remove('is-open');
+        });
+
+        // Initialize
+        loadCartCount();
+        fetchReviews();
+      })();
+    </script>
+  </body>
+</html>
