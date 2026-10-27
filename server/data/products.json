@@ -1,0 +1,562 @@
+[
+  {
+    "id": 1,
+    "name": "Sage Linen Ruffle",
+    "category": "organic newborn",
+    "tag": "100% French Linen",
+    "priceINR": 699,
+    "originalPriceINR": 1499,
+    "priceUSD": 39,
+    "platform": "Atelier Certified",
+    "rating": 4.9,
+    "reviewsCount": 1420,
+    "photo": "/baby_dresses/dress_sage_linen.jpg",
+    "images": [
+      "/baby_dresses/dress_sage_linen.jpg",
+      "/baby_dresses/dress_1_2.jpg",
+      "/baby_dresses/dress_1_3.jpg",
+      "/baby_dresses/dress_1_4.jpg",
+      "/baby_dresses/dress_1_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Pure Organic French Linen",
+      "Angle 2: Back View & Natural Coconut Buttons",
+      "Angle 3: Macro Fabric Close-up · Breathable Weave",
+      "Angle 4: Baby Model Fit & Flutter Sleeve Detail",
+      "Angle 5: LittleBloom Atelier Signature Gift Box"
+    ],
+    "desc": "Pure organic French linen with delicate flutter sleeves, natural coconut buttons, and breathable gathered skirt."
+  },
+  {
+    "id": 2,
+    "name": "Blush Floral Peplum",
+    "category": "party toddler",
+    "tag": "Organic Cotton",
+    "priceINR": 799,
+    "originalPriceINR": 1699,
+    "priceUSD": 44,
+    "platform": "Bloom's Choice",
+    "rating": 4.8,
+    "reviewsCount": 980,
+    "photo": "/baby_dresses/dress_blush_floral.jpg",
+    "images": [
+      "/baby_dresses/dress_blush_floral.jpg",
+      "/baby_dresses/dress_2_2.jpg",
+      "/baby_dresses/dress_2_3.jpg",
+      "/baby_dresses/dress_2_4.jpg",
+      "/baby_dresses/dress_2_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Double-Layered Blush Muslin",
+      "Angle 2: Display Rack View & Soft Waist Sash Bow",
+      "Angle 3: Botanical Floral Print & Feather-Soft Seams",
+      "Angle 4: Baby Model Wearing Peplum Ballerina Frock",
+      "Angle 5: LittleBloom Gift Pack with Matching Baby Headband"
+    ],
+    "desc": "Double-layered blush organic muslin with peter-pan collar, botanical flower prints, and soft waist sash."
+  },
+  {
+    "id": 3,
+    "name": "Buttercup Daisy Sundress",
+    "category": "sundress newborn",
+    "tag": "Hand-Embroidered",
+    "priceINR": 749,
+    "originalPriceINR": 1599,
+    "priceUSD": 42,
+    "platform": "Atelier Certified",
+    "rating": 4.9,
+    "reviewsCount": 1120,
+    "photo": "/baby_dresses/dress_buttercup_daisy.jpg",
+    "images": [
+      "/baby_dresses/dress_buttercup_daisy.jpg",
+      "/baby_dresses/dress_3_2.jpg",
+      "/baby_dresses/dress_3_3.jpg",
+      "/baby_dresses/dress_3_4.jpg",
+      "/baby_dresses/dress_3_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Sunny Yellow Cotton Sundress",
+      "Angle 2: Back Straps & Elastic Smocked Bodice",
+      "Angle 3: Hand-Embroidered White Daisies & Scallop Hem",
+      "Angle 4: Infant Smile · Breathable Summer Fit",
+      "Angle 5: LittleBloom Eco-Cotton Presentation Box"
+    ],
+    "desc": "Sunny yellow sundress featuring hand-embroidered white daisies, elasticated smocked bodice, and scalloped hem."
+  },
+  {
+    "id": 4,
+    "name": "Vintage Heirloom Lace",
+    "category": "party newborn",
+    "tag": "Fine Hand-Lace",
+    "priceINR": 1199,
+    "originalPriceINR": 2499,
+    "priceUSD": 65,
+    "platform": "Heritage Edition",
+    "rating": 5,
+    "reviewsCount": 640,
+    "photo": "/baby_dresses/am1387_2.jpg",
+    "images": [
+      "/baby_dresses/am1387_2.jpg",
+      "/baby_dresses/dress_4_2.jpg",
+      "/baby_dresses/dress_4_3.jpg",
+      "/baby_dresses/dress_4_4.jpg",
+      "/baby_dresses/dress_4_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Antique Ivory Heirloom Gown",
+      "Angle 2: Hand-Tatted Yoke & Traditional Trim",
+      "Angle 3: Intricate Hand-Lace Weave & Scalloped Collar",
+      "Angle 4: Baby In Christening Ceremony Fit",
+      "Angle 5: Luxury Keepsake Box with Satin Ribbon"
+    ],
+    "desc": "Antique ivory christening and party gown with delicate lace collar overlay, pearlized snaps, and scallop hem."
+  },
+  {
+    "id": 5,
+    "name": "Sky Blue Gingham Pinafore",
+    "category": "sundress toddler",
+    "tag": "Woven Gingham",
+    "priceINR": 649,
+    "originalPriceINR": 1399,
+    "priceUSD": 36,
+    "platform": "Brand Bestseller",
+    "rating": 4.7,
+    "reviewsCount": 810,
+    "photo": "/baby_dresses/dress_skyblue_gingham.jpg",
+    "images": [
+      "/baby_dresses/dress_skyblue_gingham.jpg",
+      "/baby_dresses/dress_5_2.jpg",
+      "/baby_dresses/dress_5_3.jpg",
+      "/baby_dresses/dress_5_4.jpg",
+      "/baby_dresses/dress_5_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Pastel Blue Gingham Pinafore",
+      "Angle 2: Hanger View · Natural Wood Button Straps",
+      "Angle 3: Woven Cotton Gingham Texture & Kangaroo Pocket",
+      "Angle 4: Toddler Girl Wearing Gingham Pinafore Frock",
+      "Angle 5: LittleBloom Express Fast Delivery Box"
+    ],
+    "desc": "Classic woven pastel blue gingham pinafore with adjustable shoulder straps and front pocket detail."
+  },
+  {
+    "id": 6,
+    "name": "Terracotta Boho Smocked",
+    "category": "organic toddler",
+    "tag": "Natural Dyes",
+    "priceINR": 829,
+    "originalPriceINR": 1799,
+    "priceUSD": 46,
+    "platform": "Bloom's Choice",
+    "rating": 4.9,
+    "reviewsCount": 950,
+    "photo": "/baby_dresses/dress_terracotta_boho.jpg",
+    "images": [
+      "/baby_dresses/dress_terracotta_boho.jpg",
+      "/baby_dresses/dress_6_2.jpg",
+      "/baby_dresses/dress_6_3.jpg",
+      "/baby_dresses/dress_6_4.jpg",
+      "/baby_dresses/dress_6_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Warm Terracotta Clay Boho Frock",
+      "Angle 2: Back Angle & Soft Snag-Free Button Closure",
+      "Angle 3: Geometric Bodice Smocking & Plant-Dyed Cotton",
+      "Angle 4: Baby Playing Outdoors in Boho Smocked Dress",
+      "Angle 5: LittleBloom Certified 100% Organic Cotton Tag"
+    ],
+    "desc": "Warm terracotta clay frock featuring geometric bodice embroidery, flutter sleeves, and earthy natural plant dyes."
+  },
+  {
+    "id": 7,
+    "name": "Lilac Fairy Tulle Ballerina",
+    "category": "party toddler",
+    "tag": "Soft Sparkle Tulle",
+    "priceINR": 949,
+    "originalPriceINR": 1999,
+    "priceUSD": 52,
+    "platform": "Birthday Special",
+    "rating": 4.9,
+    "reviewsCount": 1280,
+    "photo": "/baby_dresses/dress_lilac_tulle.jpg",
+    "images": [
+      "/baby_dresses/dress_lilac_tulle.jpg",
+      "/baby_dresses/dress_7_2.jpg",
+      "/baby_dresses/dress_7_3.jpg",
+      "/baby_dresses/dress_7_4.jpg",
+      "/baby_dresses/dress_7_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Lilac Sparkle Cloud Tulle Frock",
+      "Angle 2: Hanger View · Satin Waist Sash & Back Bow",
+      "Angle 3: Soft 3-Tier Non-Scratchy Tulle Fabric Zoom",
+      "Angle 4: 1st Birthday Celebration · Baby Fairy Costume",
+      "Angle 5: Birthday Special Gift Packaging & Sparkle Tiara"
+    ],
+    "desc": "Three-tier cloud tulle ballerina dress with satin bodice, waistband rosette, and scratch-free inner cotton lining."
+  },
+  {
+    "id": 8,
+    "name": "Forest Corduroy Pinafore",
+    "category": "sundress toddler",
+    "tag": "Plush Corduroy",
+    "priceINR": 869,
+    "originalPriceINR": 1899,
+    "priceUSD": 48,
+    "platform": "Atelier Certified",
+    "rating": 4.8,
+    "reviewsCount": 730,
+    "photo": "/baby_dresses/dress_forest_corduroy.jpg",
+    "images": [
+      "/baby_dresses/dress_forest_corduroy.jpg",
+      "/baby_dresses/dress_8_2.jpg",
+      "/baby_dresses/dress_8_3.jpg",
+      "/baby_dresses/dress_8_4.jpg",
+      "/baby_dresses/dress_8_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Forest Olive Corduroy Overall Dress",
+      "Angle 2: Back View & Sturdy Brass Buckle Straps",
+      "Angle 3: Fine-Wale Velvet Corduroy Texture & Front Pocket",
+      "Angle 4: Toddler Walking Outdoors in Warm Corduroy Frock",
+      "Angle 5: LittleBloom Infant Skin-Safety Certified Tag"
+    ],
+    "desc": "Plush fine-wale forest green corduroy overall dress with brass finish buckles and front kangaroo pouch."
+  },
+  {
+    "id": 9,
+    "name": "Coral Peach Polka-Dot",
+    "category": "party newborn",
+    "tag": "Combed Cotton",
+    "priceINR": 719,
+    "originalPriceINR": 1549,
+    "priceUSD": 40,
+    "platform": "Bloom's Choice",
+    "rating": 4.8,
+    "reviewsCount": 890,
+    "photo": "/baby_dresses/dress_coral_polka.jpg",
+    "images": [
+      "/baby_dresses/dress_coral_polka.jpg",
+      "/baby_dresses/dress_9_2.jpg",
+      "/baby_dresses/dress_9_3.jpg",
+      "/baby_dresses/dress_9_4.jpg",
+      "/baby_dresses/dress_9_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Coral Peach Retro Polka-Dot Frock",
+      "Angle 2: Back View & Button-Down Infant Placket",
+      "Angle 3: Combed Cotton Polka Print & Peter-Pan Collar",
+      "Angle 4: Smiling Baby in Vibrant Coral Festive Frock",
+      "Angle 5: LittleBloom Certified Tag & Colorfast Guarantee"
+    ],
+    "desc": "Vibrant coral peach dress with crisp white polka dots, peter-pan collar, and playful ric-rac hem trim."
+  },
+  {
+    "id": 10,
+    "name": "Oatmeal Ribbed Knit Frock",
+    "category": "organic newborn",
+    "tag": "Merino Wool Blend",
+    "priceINR": 1049,
+    "originalPriceINR": 2199,
+    "priceUSD": 58,
+    "platform": "Atelier Certified",
+    "rating": 5,
+    "reviewsCount": 560,
+    "photo": "/baby_dresses/test_costume_bebe.jpg",
+    "images": [
+      "/baby_dresses/test_costume_bebe.jpg",
+      "/baby_dresses/dress_10_2.jpg",
+      "/baby_dresses/dress_10_3.jpg",
+      "/baby_dresses/dress_10_4.jpg",
+      "/baby_dresses/dress_10_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Oatmeal Ribbed Knit & Muslin Skirt",
+      "Angle 2: Back Button Closure & Soft Flared Hem",
+      "Angle 3: Macro Merino-Blend Ribbed Weave & Wood Buttons",
+      "Angle 4: Newborn Sleeping Cozy in Knitted Baby Frock",
+      "Angle 5: LittleBloom Woolmark Hypoallergenic Box"
+    ],
+    "desc": "Cozy ribbed sweater bodice paired with a double-gauze muslin gathered flare skirt and natural wood buttons."
+  },
+  {
+    "id": 11,
+    "name": "Little Lion Cub Sherpa Costume",
+    "category": "costume newborn party",
+    "tag": "Brand Bestseller",
+    "priceINR": 899,
+    "originalPriceINR": 1999,
+    "priceUSD": 49,
+    "platform": "Atelier Certified",
+    "rating": 4.9,
+    "reviewsCount": 1680,
+    "photo": "/baby_dresses/costume_lion.jpg",
+    "images": [
+      "/baby_dresses/costume_lion.jpg",
+      "/baby_dresses/dress_2_2.jpg",
+      "/baby_dresses/dress_3_3.jpg",
+      "/baby_dresses/dress_10_4.jpg",
+      "/baby_dresses/dress_1_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Plush Sherpa Honey Lion Romper",
+      "Angle 2: Fluffy Mane Hood with Cute Round Ears",
+      "Angle 3: Snag-Free Safe Front Zipper with Neck Guard",
+      "Angle 4: Infant Cosplay & Milestone Photoshoot Fit",
+      "Angle 5: LittleBloom Certified Non-Toxic Packaging"
+    ],
+    "desc": "Ultra-soft golden-honey sherpa fleece lion onesie with fluffy lion mane hood, tail accent, and baby-safe zipper."
+  },
+  {
+    "id": 12,
+    "name": "Traditional Royal Krishna Costume Set",
+    "category": "costume newborn party",
+    "tag": "Festive Bestseller",
+    "priceINR": 799,
+    "originalPriceINR": 1699,
+    "priceUSD": 42,
+    "platform": "Bloom's Choice",
+    "rating": 5,
+    "reviewsCount": 2450,
+    "photo": "/baby_dresses/costume_krishna.jpg",
+    "images": [
+      "/baby_dresses/costume_krishna.jpg",
+      "/baby_dresses/dress_4_2.jpg",
+      "/baby_dresses/dress_3_3.jpg",
+      "/baby_dresses/dress_4_4.jpg",
+      "/baby_dresses/dress_4_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front Flat-Lay · Canary Yellow Silk-Cotton Set",
+      "Angle 2: Embroidered Angrakha Kurta with Gold Zari Border",
+      "Angle 3: Real Peacock Feather Crown & Golden Flute Prop",
+      "Angle 4: Janmashtami / Festive Infant Celebration Photo",
+      "Angle 5: LittleBloom Heirloom Gift Box with Diaper-Friendly Snaps"
+    ],
+    "desc": "Pure silk-cotton canary yellow dhoti & angrakha kurta with intricate gold zari embroidery, peacock crown, and flute prop."
+  },
+  {
+    "id": 13,
+    "name": "Sweet Strawberry Princess Tutu Costume",
+    "category": "costume toddler party",
+    "tag": "Atelier Certified",
+    "priceINR": 749,
+    "originalPriceINR": 1599,
+    "priceUSD": 38,
+    "platform": "Atelier Certified",
+    "rating": 4.8,
+    "reviewsCount": 1140,
+    "photo": "/baby_dresses/costume_strawberry.jpg",
+    "images": [
+      "/baby_dresses/costume_strawberry.jpg",
+      "/baby_dresses/dress_2_2.jpg",
+      "/baby_dresses/dress_9_3.jpg",
+      "/baby_dresses/dress_2_4.jpg",
+      "/baby_dresses/dress_9_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Ruby Red Strawberry Tulle Frock",
+      "Angle 2: Back Button Closure & Green Leaf Frill Collar",
+      "Angle 3: Soft Non-Scratch Polka Dot Net & Tulle Layers",
+      "Angle 4: Toddler Birthday Theme Dress & Matching Headband",
+      "Angle 5: LittleBloom Infant Skin-Safety Certificate"
+    ],
+    "desc": "Vibrant ruby red polka-dot strawberry bubble dress with emerald leaf collar, fluffy multi-tier tulle, and matching stem headband."
+  },
+  {
+    "id": 14,
+    "name": "Cuddle Bear Fleece Hooded Costume",
+    "category": "costume newborn organic",
+    "tag": "Bloom's Choice",
+    "priceINR": 849,
+    "originalPriceINR": 1799,
+    "priceUSD": 45,
+    "platform": "Bloom's Choice",
+    "rating": 4.9,
+    "reviewsCount": 1320,
+    "photo": "/baby_dresses/costume_teddy.jpg",
+    "images": [
+      "/baby_dresses/costume_teddy.jpg",
+      "/baby_dresses/dress_10_2.jpg",
+      "/baby_dresses/dress_8_3.jpg",
+      "/baby_dresses/dress_10_4.jpg",
+      "/baby_dresses/dress_10_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Baby Modeling Soft Cocoa Teddy Bear Romper",
+      "Angle 2: Bear Ear Hood & Paw Pad Embroidered Booties",
+      "Angle 3: Thermal Double-Layered Polar Fleece Texture",
+      "Angle 4: Winter Stroller & Baby Sleepsuit Experience",
+      "Angle 5: LittleBloom Eco-Friendly Recyclable Box"
+    ],
+    "desc": "Plush cocoa brown sherpa fleece onesie with teddy bear ear hood, embroidered bear paws, and non-scratch inner lining."
+  },
+  {
+    "id": 15,
+    "name": "Rainbow Pastel Fairytale Princess Gown",
+    "category": "costume party toddler",
+    "tag": "Ombre Tulle Gown",
+    "priceINR": 999,
+    "originalPriceINR": 2199,
+    "priceUSD": 54,
+    "platform": "Bloom's Choice",
+    "rating": 4.9,
+    "reviewsCount": 1890,
+    "photo": "/baby_dresses/test_baby_girl.jpg",
+    "images": [
+      "/baby_dresses/test_baby_girl.jpg",
+      "/baby_dresses/test_vay_sau.jpg",
+      "/baby_dresses/dress_7_3.jpg",
+      "/baby_dresses/dress_7_4.jpg",
+      "/baby_dresses/dress_7_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Multi-Tier Rainbow Pastel Tulle",
+      "Angle 2: Back Angle & Buttercup Satin Waist Sash Ribbon",
+      "Angle 3: Layered Mint, Peach & Lemon Cloud Ruffles",
+      "Angle 4: 1st Birthday Fairytale Cake Smash Photoshoot",
+      "Angle 5: LittleBloom Keepsake Packaging with Pearl Hanger"
+    ],
+    "desc": "Dreamy multi-tiered ombre pastel tulle ballerina frock with satin ribbon waist bow and soft 100% cotton inner lining."
+  },
+  {
+    "id": 16,
+    "name": "Classic French Petit Romper & Cardigan",
+    "category": "costume newborn organic",
+    "tag": "Parisian Organic Set",
+    "priceINR": 829,
+    "originalPriceINR": 1749,
+    "priceUSD": 44,
+    "platform": "Atelier Certified",
+    "rating": 4.9,
+    "reviewsCount": 940,
+    "photo": "/baby_dresses/test_costume_bebe.jpg",
+    "images": [
+      "/baby_dresses/test_costume_bebe.jpg",
+      "/baby_dresses/dress_1_2.jpg",
+      "/baby_dresses/dress_1_3.jpg",
+      "/baby_dresses/dress_10_4.jpg",
+      "/baby_dresses/dress_1_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Display Rack View · Organic Muslin Footed Romper",
+      "Angle 2: Matching Textured Cream Cardigan Jacket",
+      "Angle 3: Natural Coconut Buttons & Smooth Flatlock Seams",
+      "Angle 4: Newborn Coming-Home Costume Presentation",
+      "Angle 5: LittleBloom Organic French Muslin Presentation Box"
+    ],
+    "desc": "Vintage Parisian styled organic rib-knit footed sleeper costume with matching structured knit cardigan and wood-look buttons."
+  },
+  {
+    "id": 17,
+    "name": "Pink Pearl Monarch Tutu Gown",
+    "category": "costume party toddler",
+    "tag": "Handcrafted Pearls",
+    "priceINR": 929,
+    "originalPriceINR": 1999,
+    "priceUSD": 48,
+    "platform": "Atelier Certified",
+    "rating": 4.9,
+    "reviewsCount": 1470,
+    "photo": "/baby_dresses/test_vay_hong.jpg",
+    "images": [
+      "/baby_dresses/test_vay_hong.jpg",
+      "/baby_dresses/dress_2_2.jpg",
+      "/baby_dresses/dress_7_3.jpg",
+      "/baby_dresses/dress_2_4.jpg",
+      "/baby_dresses/dress_7_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Dusty Rose Satin & Hand-Sewn Pearls",
+      "Angle 2: Triple Layered Ombre Magenta Cloud Tulle",
+      "Angle 3: Waist Satin Ribbon Rosette & Smooth Zipper",
+      "Angle 4: Baby Ballerina Costume for Toddler Events",
+      "Angle 5: LittleBloom Luxury Gift Presentation Box"
+    ],
+    "desc": "Rose petal pink satin bodice with hand-beaded pearls, layered cloud tulle skirt, and matching satin bow."
+  },
+  {
+    "id": 18,
+    "name": "Sunlit Meadow Bloom Pinafore Set",
+    "category": "costume sundress toddler",
+    "tag": "Combed Cotton Drill",
+    "priceINR": 679,
+    "originalPriceINR": 1449,
+    "priceUSD": 36,
+    "platform": "Bloom's Choice",
+    "rating": 4.8,
+    "reviewsCount": 820,
+    "photo": "/baby_dresses/test_white_pink.jpg",
+    "images": [
+      "/baby_dresses/test_white_pink.jpg",
+      "/baby_dresses/dress_5_2.jpg",
+      "/baby_dresses/dress_5_3.jpg",
+      "/baby_dresses/dress_5_4.jpg",
+      "/baby_dresses/dress_5_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Retro Pink Meadow Flower Pinafore",
+      "Angle 2: Hanger View · Natural Pearl Button Shoulder Straps",
+      "Angle 3: Screen-Printed Organic Cotton Drill Texture",
+      "Angle 4: Toddler Playing in Playroom Costume Pinafore",
+      "Angle 5: LittleBloom Eco-Friendly Recyclable Packaging"
+    ],
+    "desc": "Hand-printed retro sunflower bloom pinafore in heavy combed organic cotton drill with wooden side adjustment buttons."
+  },
+  {
+    "id": 19,
+    "name": "Ruby Blossom Corduroy Pinafore",
+    "category": "sundress toddler organic",
+    "tag": "Fine Corduroy",
+    "priceINR": 799,
+    "originalPriceINR": 1699,
+    "priceUSD": 44,
+    "platform": "Bloom's Choice",
+    "rating": 4.9,
+    "reviewsCount": 940,
+    "photo": "/baby_dresses/test_clothkits.jpg",
+    "images": [
+      "/baby_dresses/test_clothkits.jpg",
+      "/baby_dresses/dress_8_2.jpg",
+      "/baby_dresses/dress_8_3.jpg",
+      "/baby_dresses/dress_8_4.jpg",
+      "/baby_dresses/dress_8_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Vibrant Crimson Fine Corduroy Pinafore",
+      "Angle 2: Natural Mother-of-Pearl Button Shoulder Straps",
+      "Angle 3: Whimsical Bird & Botanical Flower Print Detail",
+      "Angle 4: Layered Toddler Autumn & Winter Outfit Fit",
+      "Angle 5: LittleBloom Signature Eco-Friendly Gift Pack"
+    ],
+    "desc": "Vibrant scarlet fine-corduroy pinafore dress with hand-drawn botanical bloom prints and natural shell buttons."
+  },
+  {
+    "id": 20,
+    "name": "Victorian Tatted Heirloom Gown",
+    "category": "party newborn organic",
+    "tag": "Antique Lace",
+    "priceINR": 1299,
+    "originalPriceINR": 2799,
+    "priceUSD": 55,
+    "platform": "Atelier Certified",
+    "rating": 5,
+    "reviewsCount": 1180,
+    "photo": "/baby_dresses/test_tatted.jpg",
+    "images": [
+      "/baby_dresses/test_tatted.jpg",
+      "/baby_dresses/dress_4_2.jpg",
+      "/baby_dresses/dress_4_3.jpg",
+      "/baby_dresses/dress_4_4.jpg",
+      "/baby_dresses/dress_4_5.jpg"
+    ],
+    "imageLabels": [
+      "Angle 1: Front View · Vintage Hand-Tatted Lace Heirloom Gown",
+      "Angle 2: Delicate Openwork Lace Yoke & Butterfly Sleeves",
+      "Angle 3: Traditional Pintuck Pleats & Scalloped Hem",
+      "Angle 4: Baby Christening, Naming Ceremony & Milestone Gown",
+      "Angle 5: LittleBloom Atelier Keepsake Preservation Box"
+    ],
+    "desc": "Handcrafted pure cotton christening and blessing gown with ornate scalloped tatting lace yoke and airy bishop hem."
+  }
+]

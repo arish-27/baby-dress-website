@@ -1,0 +1,233 @@
+{
+  "LB-EXP-89241": {
+    "id": "LB-EXP-89241",
+    "platform": "Atelier Certified",
+    "status": "out_for_delivery",
+    "statusPillClass": "pill-out-for-delivery",
+    "statusPillText": "Out for Delivery Today",
+    "eta": "Today by 5:30 PM (Express 48h)",
+    "courierName": "LittleBloom Express Fleet",
+    "trackingAwb": "LBEXP92817420IN",
+    "deliveryPartner": "Ramesh Kumar (Delivery Associate)",
+    "partnerPhone": "+91 98450 72190",
+    "deliveryOtp": "4821",
+    "shippingAddress": "Priya Sharma, 42B Lotus Gardens, Indiranagar, Bengaluru - 560038",
+    "paymentMethod": "UPI Verified (Paid ₹1,448)",
+    "items": [
+      {
+        "name": "Sweet Strawberry Princess Tutu Costume",
+        "size": "3-6M",
+        "quantity": 1,
+        "priceINR": 749,
+        "photo": "/baby_dresses/costume_strawberry.jpg"
+      },
+      {
+        "name": "Sage Linen Ruffle",
+        "size": "0-3M",
+        "quantity": 1,
+        "priceINR": 699,
+        "photo": "/baby_dresses/dress_sage_linen.jpg"
+      }
+    ],
+    "timelineStep": 4,
+    "progressPct": "85%",
+    "activityLog": [
+      {
+        "time": "Today 02:45 PM",
+        "text": "Courier associate Ramesh K is out for delivery in Indiranagar. Please share OTP 4821 upon arrival."
+      },
+      {
+        "time": "Today 10:15 AM",
+        "text": "Package arrived at Bengaluru Local Hub (CV Raman Nagar Facility)."
+      },
+      {
+        "time": "Yesterday 08:30 PM",
+        "text": "In Transit: Dispatched from LittleBloom South Hub (Tirupur Organic Muslin Hub)."
+      },
+      {
+        "time": "Yesterday 02:00 PM",
+        "text": "Quality Checked: Passed 21-point infant safety & hypoallergenic tests. Sanitized muslin gift box sealed."
+      },
+      {
+        "time": "Yesterday 11:15 AM",
+        "text": "Order Confirmed & Payment verified via LittleBloom Secure Gateway."
+      }
+    ]
+  },
+  "LB-AIR-78219": {
+    "id": "LB-AIR-78219",
+    "platform": "Bloom's Choice",
+    "status": "in_transit",
+    "statusPillClass": "pill-in-transit",
+    "statusPillText": "In Transit · Arriving Tomorrow",
+    "eta": "Tomorrow by 1:00 PM (Priority Air)",
+    "courierName": "Bloom Priority Air Cargo",
+    "trackingAwb": "LBAIR819230199IN",
+    "deliveryPartner": "LittleBloom Air Express Surface",
+    "partnerPhone": "1800-425-8899 (Customer Support)",
+    "deliveryOtp": "9143",
+    "shippingAddress": "Karthik Subramanian, Flat 304, Green Palms, Whitefield, Bengaluru - 560066",
+    "paymentMethod": "UPI Verified (Paid ₹899)",
+    "items": [
+      {
+        "name": "Little Lion Cub Sherpa Costume",
+        "size": "6-12M",
+        "quantity": 1,
+        "priceINR": 899,
+        "photo": "/baby_dresses/costume_lion.jpg"
+      }
+    ],
+    "timelineStep": 3,
+    "progressPct": "58%",
+    "activityLog": [
+      {
+        "time": "Today 04:10 PM",
+        "text": "Departed sorting facility in Hosur. On route to LittleBloom Bangalore Delivery Station."
+      },
+      {
+        "time": "Today 09:30 AM",
+        "text": "Package processed through LittleBloom Express Central Hub."
+      },
+      {
+        "time": "Yesterday 06:00 PM",
+        "text": "Dispatched from Tirupur Artisan Babywear Studio."
+      },
+      {
+        "time": "Yesterday 01:20 PM",
+        "text": "Sanitized & packed in LittleBloom eco-friendly presentation box."
+      },
+      {
+        "time": "Yesterday 10:00 AM",
+        "text": "Order Placed & LittleBloom Atelier quality check verified."
+      }
+    ]
+  },
+  "LB-STD-65104": {
+    "id": "LB-STD-65104",
+    "platform": "Atelier Certified",
+    "status": "delivered",
+    "statusPillClass": "pill-delivered",
+    "statusPillText": "Delivered · Oct 24",
+    "eta": "Delivered on Friday, Oct 24 at 04:15 PM",
+    "courierName": "BlueDart Express Partner",
+    "trackingAwb": "BLUEDART74829104",
+    "deliveryPartner": "Delivered & Signed with OTP",
+    "partnerPhone": "Verified Doorstep Handover",
+    "deliveryOtp": "Verified",
+    "shippingAddress": "Sneha Reddy, #12 Rose Villa, HSR Layout Sector 2, Bengaluru - 560102",
+    "paymentMethod": "Credit Card (Paid ₹1,848)",
+    "items": [
+      {
+        "name": "Traditional Royal Krishna Costume Set",
+        "size": "0-3M",
+        "quantity": 1,
+        "priceINR": 799,
+        "photo": "/baby_dresses/costume_krishna.jpg"
+      },
+      {
+        "name": "Oatmeal Ribbed Knit Frock",
+        "size": "0-3M",
+        "quantity": 1,
+        "priceINR": 1049,
+        "photo": "/baby_dresses/dress_10_1.jpg"
+      }
+    ],
+    "timelineStep": 4,
+    "progressPct": "100%",
+    "activityLog": [
+      {
+        "time": "Oct 24, 04:15 PM",
+        "text": "Delivered successfully! Package handed over to recipient. OTP verified."
+      },
+      {
+        "time": "Oct 24, 01:20 PM",
+        "text": "Out for delivery with courier agent Suresh."
+      },
+      {
+        "time": "Oct 23, 07:00 PM",
+        "text": "Arrived at destination city hub."
+      },
+      {
+        "time": "Oct 22, 03:00 PM",
+        "text": "Order Shipped from LittleBloom Atelier facility."
+      }
+    ]
+  },
+  "LB-PRM-99342": {
+    "id": "LB-PRM-99342",
+    "platform": "Bloom's Choice",
+    "status": "packed",
+    "statusPillClass": "pill-packed",
+    "statusPillText": "Sanitized Muslin Packing",
+    "eta": "Express Delivery in 48 Hours",
+    "courierName": "Preparing for LittleBloom Express Dispatch",
+    "trackingAwb": "AWB will be assigned upon pickup",
+    "deliveryPartner": "Handcrafted Muslin Studio",
+    "partnerPhone": "LittleBloom Tirupur Workshop",
+    "deliveryOtp": "Will be shared on dispatch",
+    "shippingAddress": "Ananya Patel, A-102 Prestige Lakeside, Varthur, Bengaluru - 560087",
+    "paymentMethod": "Cash on Delivery (₹849 payable)",
+    "items": [
+      {
+        "name": "Cuddle Bear Fleece Hooded Costume",
+        "size": "0-3M",
+        "quantity": 1,
+        "priceINR": 849,
+        "photo": "/baby_dresses/costume_teddy.jpg"
+      }
+    ],
+    "timelineStep": 2,
+    "progressPct": "32%",
+    "activityLog": [
+      {
+        "time": "Today 05:20 PM",
+        "text": "Crafting completed. Infant dermatologist 21-point fabric inspection in progress."
+      },
+      {
+        "time": "Today 02:15 PM",
+        "text": "Muslin fabric steamed, sanitized at 100°C, and folded in gift box."
+      },
+      {
+        "time": "Today 11:00 AM",
+        "text": "Order Confirmed. Allocated to LittleBloom Master Weaver Studio."
+      }
+    ]
+  },
+  "LB-EXP-14964": {
+    "id": "LB-EXP-14964",
+    "platform": "Atelier Certified",
+    "status": "confirmed",
+    "statusPillClass": "pill-confirmed",
+    "statusPillText": "Order Confirmed & Atelier Dispatched",
+    "eta": "Delivering in 2-3 Days (Free Express 48h)",
+    "courierName": "LittleBloom Express Fleet",
+    "trackingAwb": "LBEXP87974095IN",
+    "deliveryPartner": "Arun V (Atelier Courier Associate)",
+    "partnerPhone": "+91 98450 78760",
+    "deliveryOtp": "2529",
+    "shippingAddress": "Sanjay Ramanathan, Flat 4A, Green Meadows, Anna Nagar, Chennai · Phone: +91 99401 23456",
+    "paymentMethod": "UPI Express (Google Pay)",
+    "items": [
+      {
+        "name": "Sage Linen Ruffle",
+        "size": "0-3M",
+        "quantity": 1,
+        "priceINR": 699,
+        "photo": "/baby_dresses/dress_sage_linen.jpg"
+      }
+    ],
+    "timelineStep": 1,
+    "progressPct": "25%",
+    "createdAt": "2026-10-26T17:49:00.491Z",
+    "activityLog": [
+      {
+        "time": "Just now",
+        "text": "Order Confirmed: Payment verified via LittleBloom Secure Gateway. Packing with breathable muslin gift wrap."
+      },
+      {
+        "time": "Next Step",
+        "text": "Quality Inspection: Passing 21-point infant skin safety & hypoallergenic dye test at South Hub Atelier."
+      }
+    ]
+  }
+}

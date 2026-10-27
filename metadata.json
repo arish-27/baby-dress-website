@@ -1,0 +1,8 @@
+{
+  "name": "LittleBloom Babywear",
+  "description": "Pure Cotton Baby Dresses, Costumes & Frocks - LittleBloom Atelier certified babywear store with 3D showcase, instant cart, and express tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
